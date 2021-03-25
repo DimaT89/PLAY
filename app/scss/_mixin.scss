@@ -1,0 +1,15 @@
+@mixin button-reset {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@mixin font-base {
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}

@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/lib.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+
+    <!--Modal Reg Mob  -->
+    <div class="modal fade" id="regMob" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-size-regMob">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="images/close-modal.png" alt="">
+                        </span>
+                    </button>
+                    <div class="modal-wrapper-regMob">
+                        <h5 class="modal-title-regMob" id="exampleModalLongTitle">CREATE ACCOUNT</h5>
+                        <form class="modal-form-regMob" action="#">
+                            <input class="modal-input-regMob" type="text" placeholder="Username">
+                            <input class="modal-input-regMob" type="email" placeholder="Email">
+                            <input class="modal-input-regMob" type="password" placeholder="Password">
+                        </form>
+                        <div class="modal-regMob-footer">
+                            <button class="btn-regMob">Register</button>
+                            <div class="modal-regMob-copy">
+                                <span class="accoun-regMob">Have Account?</span>
+                                <a class="link-regMob" href="#">Register Here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Modal Sign In Mob  -->
+    <div class="modal fade" id="signinMob" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-size-signinMob">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="images/close-modal.png" alt="">
+                        </span>
+                    </button>
+                    <div class="modal-wrapper-signinMob">
+                        <h5 class="modal-title-signinMob" id="exampleModalLongTitle">SIGN IN</h5>
+                        <form class="modal-form-signinMob" action="#">
+                            <input class="modal-input-signinMob" type="text" type="email"
+                                placeholder="Username or email">
+                            <input class="modal-input-signinMob" type="password" placeholder="Password">
+                        </form>
+                        <div class="modal-signinMob-footer">
+                            <button class="btn-signinMob">Login</button>
+                            <div class="modal-signinMob-copy">
+                                <span class="accoun-signinMob">Have Account?</span>
+                                <a class="link-signinMob" href="#">Login Here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Reg Desk -->
+    <div class="modal fade" id="regDesk" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-size-reg">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="images/close-modal.png" alt="">
+                        </span>
+                    </button>
+                    <div class="modal-wrapper-reg">
+                        <h5 class="modal-title-reg" id="exampleModalLongTitle">CREATE ACCOUNT</h5>
+                        <form class="modal-form-reg" action="#">
+                            <input class="modal-input-reg" type="text" placeholder="Username">
+                            <input class="modal-input-reg" type="email" placeholder="Email">
+                            <input class="modal-input-reg" type="password" placeholder="Password">
+                        </form>
+                        <div class="modal-reg-footer">
+                            <button class="btn-reg-dsk">Register</button>
+                            <div class="modal-reg-copy">
+                                <span class="accoun-desk-reg">Have Account?</span>
+                                <a class="link-desk-reg" href="#">Register Here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Sign In Desk -->
+    <div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-size-signin">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <img src="images/close-modal.png" alt="">
+                        </span>
+                    </button>
+                    <div class="modal-wrapper-signin">
+                        <h5 class="modal-title-signin" id="exampleModalLongTitle">SIGN IN</h5>
+                        <form class="modal-form-signin" action="#">
+                            <input class="modal-input-signin" type="text" type="email" placeholder="Username or email">
+                            <input class="modal-input-signin" type="password" placeholder="Password">
+                        </form>
+                        <div class="modal-signin-footer">
+                            <button class="btn-signin-dsk">Login</button>
+                            <div class="modal-signin-copy">
+                                <span class="accoun-desk-signin">Have Account?</span>
+                                <a class="link-desk-signin" href="#">Login Here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------>
+
+
+    <header class="header-desk">
+        <div class="container-desk">
+            <div class="header-desk__top">
+                <a class="header-desk__top-logo" href="#">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <form class="header-desk__top-form" action="">
+                    <input class="header-desk__top-form-input" required type="text" placeholder="Search game...">
+                    <button class="header-desk__top-form-btn-reg btn btn-primary" type="button" data-toggle="modal"
+                        data-target="#regDesk">Register</button>
+                    <button class="header-desk__top-form-btn-log btn btn-primary" type="button" data-toggle="modal"
+                        data-target="#signIn">Login</button>
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.005 512.005"
+                        style="enable-background:new 0 0 512.005 512.005;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path
+                                    d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667
+                                    S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6
+                                    c4.16,4.16,9.621,6.251,15.083,6.251s10.923-2.091,15.083-6.251C514.091,497.411,514.091,483.928,505.749,475.587z
+                                    M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z" />
+                            </g>
+                        </g>
+                    </svg>
+                </form>
+            </div>
+            <div class="header-desk__bottom">
+                <nav class="header-desk__bottom-menu">
+                    <ul class="header-desk__bottom-list">
+                        <li class="header-desk__bottom-item">
+                            <a class="header-desk__bottom-link" href="#">Home</a>
+                        </li>
+                        <li class="header-desk__bottom-item">
+                            <a class="header-desk__bottom-link" href="#">About</a>
+                        </li>
+                        <li class="header-desk__bottom-item">
+                            <a class="header-desk__bottom-link" href="#">Games</a>
+                        </li>
+                        <li class="header-desk__bottom-item">
+                            <a class="header-desk__bottom-link" href="#">News</a>
+                        </li>
+                        <li class="header-desk__bottom-item">
+                            <a class="header-desk__bottom-link" href="#">Contacts</a>
+                        </li>
+                        <li class="header-desk__bottom-item">
+                            <a class="header-desk__bottom-link" href="#">Terms and conditions of use</a>
+                        </li>
+                        <li class="header-desk__bottom-item">
+                            <a class="header-desk__bottom-link" href="#">Secure payment</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <a class="header__logo" href="#">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <a href="#" class="header__burger">
+                    <img class="header__burger-img" src="images/burger.png" alt="">
+                </a>
+            </div>
+
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#" class="header__link">Home</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">About</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Games</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">News</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Contacts</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Terms and conditions of use</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Secure payment</a>
+                    </li>
+                    <li class="header__wrap">
+                        <div class="header__wrap-form">
+                            <!-- <form action="#" class="header__wrap-search">
+                                <input type="text">
+                            </form> -->
+                            <button class="header__wrap-reg-btn btn btn-primary" type="button" data-toggle="modal"
+                                data-target="#regMob">REGISTER</button>
+                            <button class="header__wrap-login-btn btn btn-primary" type="button" data-toggle="modal"
+                                data-target="#signinMob">LOGIN</button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="banner-section">
+        <div class="container">
+            <div class="banner-section__wrap">
+                <div class="slider js-slider-min">
+                    <div class="banner-section__slider">
+                        <div class="banner-section__content">
+                            <h2 class="banner-section__tittle">
+                                Horizon
+                            </h2>
+                            <p class="banner-section__item">
+                                Forbidden West
+                            </p>
+                            <p class="banner-section__info">
+                                Horizon Forbidden West is an upcoming action role-playing game
+                                developed by Guerrilla Games and published by Sony Interactive Entertainment.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="banner-section__slider">
+                        <div class="banner-section__content">
+                            <h2 class="banner-section__tittle">
+                                Horizon
+                            </h2>
+                            <p class="banner-section__item">
+                                Forbidden West
+                            </p>
+                            <p class="banner-section__info">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit laboriosam aliquid
+                                dolorem
+                                illum veniam. Cum maxime doloremque sequi et itaque?
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="banner-section__slider">
+                        <div class="banner-section__content">
+                            <h2 class="banner-section__tittle">
+                                Horizon
+                            </h2>
+                            <p class="banner-section__item">
+                                Forbidden West
+                            </p>
+                            <p class="banner-section__info">
+                                Horizon Forbidden West is an upcoming action role-playing game
+                                developed by Guerrilla Games and published by Sony Interactive Entertainment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a class="banner-section__play" href="#">play now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="free">
+        <div class="container">
+            <div class="free_container">
+                <div class="free__list">
+                    <div class="free__list-item free__delivery-img">
+                        <div class="free__inner">
+                            <h4 class="free__tittle">
+                                Free Delivery
+                            </h4>
+                            <p class="free__info">
+                                Free Shipping On All Order lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="free__list-item free__money-img">
+                        <div class="free__inner">
+                            <h4 class="free__tittle">
+                                Money Return
+                            </h4>
+                            <p class="free__info">
+                                Back Guarantee in 7 days dolor sit amet, consectetuer adipiscing elit
+                            </p>
+                        </div>
+                    </div>
+                    <div class="free__list-item free__members-img">
+                        <div class="free__inner">
+                            <h4 class="free__tittle">
+                                Member Discount
+                            </h4>
+                            <p class="free__info">
+                                ack Guarantee in 7 days dolor sit amet, consectetuer adipiscing elit
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="top">
+        <div class="container">
+            <div class="top__inner">
+                <div class="top__top">
+                    <h4 class="top__tittle">Top Games</h4>
+                </div>
+            </div>
+
+            <section class="game-sliders">
+
+
+                <ul class="nav nav-tabs game-sliders__tabs" role="tablist">
+                    <li class="active">
+                        <a href="#all" role="tab" data-toggle="tab">
+                            All
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#adventure" role="tab" data-toggle="tab">
+                            Adventure
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#racing" role="tab" data-toggle="tab">
+                            Racing & Flying
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade active in" id="all">
+                        <div class="game-sliders js-game-all">
+
+                            <div class="card-slide">
+                                <div class="image-container sale-block">
+                                    <img class="search__slider-img-title" src="images/sackboy.jpg" alt="">
+                                    <nav class="button-wrap">
+                                        <a href="#" class="slider-button-secondary">Read more</a>
+                                        <a href="#" class="slider-button-first">buy now</a>
+                                    </nav>
+                                    <span class="sale">-30%</span>
+                                </div>
+                                <div class="slider-info-wrap">
+                                    <h3 class="slider-info-head">Sackboy: A Big Adventure</h3>
+                                    <div class="slider-info-stars">
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                    </div>
+                                    <div class="slider-info-coast">
+                                        <div class="slider-info-coast-old"></div>
+                                        <div class="slider-info-coast-new">$85.95</div>
+                                    </div>
+                                    <p class="slider-info-text">For norland produce age wishing. To figure on it spring
+                                        season up. Her provision acuteness had excellent two why intention.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-slide">
+                                <div class="image-container sale-block">
+                                    <img class="search__slider-img-title" src="images/horizon.jpg" alt="">
+                                    <nav class="button-wrap">
+                                        <a href="#" class="slider-button-secondary">Read more</a>
+                                        <a href="#" class="slider-button-first">buy now</a>
+                                    </nav>
+                                    <span class="sale">-50%</span>
+                                </div>
+                                <div class="slider-info-wrap">
+                                    <h3 class="slider-info-head">Horizon Forbidden West</h3>
+                                    <div class="slider-info-stars">
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                    </div>
+                                    <div class="slider-info-coast">
+                                        <div class="slider-info-coast-old">$282.02</div>
+                                        <div class="slider-info-coast-new">$140.95</div>
+                                    </div>
+                                    <p class="slider-info-text">
+                                        Horizon Forbidden West game developed by Guerrilla Games and published by Sony
+                                        Interactive Entertainment....
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-slide">
+                                <div class="image-container sale-block">
+                                    <img class="search__slider-img-title" src="images/sackboy.jpg" alt="">
+                                    <nav class="button-wrap">
+                                        <a href="#" class="slider-button-secondary">Read more</a>
+                                        <a href="#" class="slider-button-first">buy now</a>
+                                    </nav>
+                                    <span class="sale">-30%</span>
+                                </div>
+                                <div class="slider-info-wrap">
+                                    <h3 class="slider-info-head">Sackboy: A Big Adventure</h3>
+                                    <div class="slider-info-stars">
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                    </div>
+                                    <div class="slider-info-coast">
+                                        <div class="slider-info-coast-old"></div>
+                                        <div class="slider-info-coast-new">$85.95</div>
+                                    </div>
+                                    <p class="slider-info-text">For norland produce age wishing. To figure on it spring
+                                        season up. Her provision acuteness had excellent two why intention.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-slide">
+                                <div class="image-container sale-block">
+                                    <img class="search__slider-img-title" src="images/crash.jpg" alt="">
+                                    <nav class="button-wrap">
+                                        <a href="#" class="slider-button-secondary">Read more</a>
+                                        <a href="#" class="slider-button-first">buy now</a>
+                                    </nav>
+                                    <span class="sale">-99%</span>
+                                </div>
+                                <div class="slider-info-wrap">
+                                    <h3 class="slider-info-head">Sackboy: A Big Adventure</h3>
+                                    <div class="slider-info-stars">
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                    </div>
+                                    <div class="slider-info-coast">
+                                        <div class="slider-info-coast-old"></div>
+                                        <div class="slider-info-coast-new">$85.95</div>
+                                    </div>
+                                    <p class="slider-info-text">For norland produce age wishing. To figure on it spring
+                                        season up. Her provision acuteness had excellent two why intention.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-slide">
+                                <div class="image-container sale-block">
+                                    <img class="search__slider-img-title" src="images/sackboy.jpg" alt="">
+                                    <nav class="button-wrap">
+                                        <a href="#" class="slider-button-secondary">Read more</a>
+                                        <a href="#" class="slider-button-first">buy now</a>
+                                    </nav>
+                                    <span class="sale">-22%</span>
+                                </div>
+                                <div class="slider-info-wrap">
+                                    <h3 class="slider-info-head">Sackboy: A Big Adventure</h3>
+                                    <div class="slider-info-stars">
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                    </div>
+                                    <div class="slider-info-coast">
+                                        <div class="slider-info-coast-old"></div>
+                                        <div class="slider-info-coast-new">$85.95</div>
+                                    </div>
+                                    <p class="slider-info-text">For norland produce age wishing. To figure on it spring
+                                        season up. Her provision acuteness had excellent two why intention.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="adventure">
+                        <div class="game-sliders js-game-adventure">
+                            <div class="card-slide">
+                                <div class="image-container sale-block">
+                                    <img class="search__slider-img-title" src="images/horizon.jpg" alt="">
+                                    <nav class="button-wrap">
+                                        <a href="#" class="slider-button-secondary">Read more</a>
+                                        <a href="#" class="slider-button-first">buy now</a>
+                                    </nav>
+                                    <span class="sale">-50%</span>
+                                </div>
+                                <div class="slider-info-wrap">
+                                    <h3 class="slider-info-head">Horizon Forbidden West</h3>
+                                    <div class="slider-info-stars">
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                    </div>
+                                    <div class="slider-info-coast">
+                                        <div class="slider-info-coast-old">$282.02</div>
+                                        <div class="slider-info-coast-new">$140.95</div>
+                                    </div>
+                                    <p class="slider-info-text">
+                                        Horizon Forbidden West game developed by Guerrilla Games and published by Sony
+                                        Interactive Entertainment....
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-slide">
+                                <div class="image-container sale-block">
+                                    <img class="search__slider-img-title" src="images/horizon.jpg" alt="">
+                                    <nav class="button-wrap">
+                                        <a href="#" class="slider-button-secondary">Read more</a>
+                                        <a href="#" class="slider-button-first">buy now</a>
+                                    </nav>
+                                    <span class="sale">-50%</span>
+                                </div>
+                                <div class="slider-info-wrap">
+                                    <h3 class="slider-info-head">Horizon Forbidden West</h3>
+                                    <div class="slider-info-stars">
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                    </div>
+                                    <div class="slider-info-coast">
+                                        <div class="slider-info-coast-old">$282.02</div>
+                                        <div class="slider-info-coast-new">$140.95</div>
+                                    </div>
+                                    <p class="slider-info-text">
+                                        Horizon Forbidden West game developed by Guerrilla Games and published by Sony
+                                        Interactive Entertainment....
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-slide">
+                                <div class="image-container sale-block">
+                                    <img class="search__slider-img-title" src="images/horizon.jpg" alt="">
+                                    <nav class="button-wrap">
+                                        <a href="#" class="slider-button-secondary">Read more</a>
+                                        <a href="#" class="slider-button-first">buy now</a>
+                                    </nav>
+                                    <span class="sale">-50%</span>
+                                </div>
+                                <div class="slider-info-wrap">
+                                    <h3 class="slider-info-head">Horizon Forbidden West</h3>
+                                    <div class="slider-info-stars">
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                    </div>
+                                    <div class="slider-info-coast">
+                                        <div class="slider-info-coast-old">$282.02</div>
+                                        <div class="slider-info-coast-new">$140.95</div>
+                                    </div>
+                                    <p class="slider-info-text">
+                                        Horizon Forbidden West game developed by Guerrilla Games and published by Sony
+                                        Interactive Entertainment....
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-slide">
+                                <div class="image-container sale-block">
+                                    <img class="search__slider-img-title" src="images/horizon.jpg" alt="">
+                                    <nav class="button-wrap">
+                                        <a href="#" class="slider-button-secondary">Read more</a>
+                                        <a href="#" class="slider-button-first">buy now</a>
+                                    </nav>
+                                    <span class="sale">-50%</span>
+                                </div>
+                                <div class="slider-info-wrap">
+                                    <h3 class="slider-info-head">Horizon Forbidden West</h3>
+                                    <div class="slider-info-stars">
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                    </div>
+                                    <div class="slider-info-coast">
+                                        <div class="slider-info-coast-old">$282.02</div>
+                                        <div class="slider-info-coast-new">$140.95</div>
+                                    </div>
+                                    <p class="slider-info-text">
+                                        Horizon Forbidden West game developed by Guerrilla Games and published by Sony
+                                        Interactive Entertainment....
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-slide">
+                                <div class="image-container sale-block">
+                                    <img class="search__slider-img-title" src="images/horizon.jpg" alt="">
+                                    <nav class="button-wrap">
+                                        <a href="#" class="slider-button-secondary">Read more</a>
+                                        <a href="#" class="slider-button-first">buy now</a>
+                                    </nav>
+                                    <span class="sale">-50%</span>
+                                </div>
+                                <div class="slider-info-wrap">
+                                    <h3 class="slider-info-head">Horizon Forbidden West</h3>
+                                    <div class="slider-info-stars">
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                    </div>
+                                    <div class="slider-info-coast">
+                                        <div class="slider-info-coast-old">$282.02</div>
+                                        <div class="slider-info-coast-new">$140.95</div>
+                                    </div>
+                                    <p class="slider-info-text">
+                                        Horizon Forbidden West game developed by Guerrilla Games and published by Sony
+                                        Interactive Entertainment....
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="racing">
+                        <div class="game-sliders js-game-racing">
+
+                            <div class="card-slide">
+                                <div class="image-container sale-block">
+                                    <img class="search__slider-img-title" src="images/crash.jpg" alt="">
+                                    <nav class="button-wrap">
+                                        <a href="#" class="slider-button-secondary">Read more</a>
+                                        <a href="#" class="slider-button-first">buy now</a>
+                                    </nav>
+                                    <span class="sale">-30%</span>
+                                </div>
+                                <div class="slider-info-wrap">
+                                    <h3 class="slider-info-head">Crash Bandicoot 4 - It's About Time</h3>
+                                    <div class="slider-info-stars">
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                    </div>
+                                    <div class="slider-info-coast">
+                                        <div class="slider-info-coast-old"></div>
+                                        <div class="slider-info-coast-new">$240.95</div>
+                                    </div>
+                                    <p class="slider-info-text">For norland produce age wishing. To figure on it spring
+                                        season up. Her provision acuteness had excellent two why intention.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-slide">
+                                <div class="image-container sale-block">
+                                    <img class="search__slider-img-title" src="images/crash.jpg" alt="">
+                                    <nav class="button-wrap">
+                                        <a href="#" class="slider-button-secondary">Read more</a>
+                                        <a href="#" class="slider-button-first">buy now</a>
+                                    </nav>
+                                    <span class="sale">-30%</span>
+                                </div>
+                                <div class="slider-info-wrap">
+                                    <h3 class="slider-info-head">Crash Bandicoot 4 - It's About Time</h3>
+                                    <div class="slider-info-stars">
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                    </div>
+                                    <div class="slider-info-coast">
+                                        <div class="slider-info-coast-old"></div>
+                                        <div class="slider-info-coast-new">$240.95</div>
+                                    </div>
+                                    <p class="slider-info-text">For norland produce age wishing. To figure on it spring
+                                        season up. Her provision acuteness had excellent two why intention.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-slide">
+                                <div class="image-container sale-block">
+                                    <img class="search__slider-img-title" src="images/crash.jpg" alt="">
+                                    <nav class="button-wrap">
+                                        <a href="#" class="slider-button-secondary">Read more</a>
+                                        <a href="#" class="slider-button-first">buy now</a>
+                                    </nav>
+                                    <span class="sale">-30%</span>
+                                </div>
+                                <div class="slider-info-wrap">
+                                    <h3 class="slider-info-head">Crash Bandicoot 4 - It's About Time</h3>
+                                    <div class="slider-info-stars">
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                    </div>
+                                    <div class="slider-info-coast">
+                                        <div class="slider-info-coast-old"></div>
+                                        <div class="slider-info-coast-new">$240.95</div>
+                                    </div>
+                                    <p class="slider-info-text">For norland produce age wishing. To figure on it spring
+                                        season up. Her provision acuteness had excellent two why intention.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-slide">
+                                <div class="image-container sale-block">
+                                    <img class="search__slider-img-title" src="images/crash.jpg" alt="">
+                                    <nav class="button-wrap">
+                                        <a href="#" class="slider-button-secondary">Read more</a>
+                                        <a href="#" class="slider-button-first">buy now</a>
+                                    </nav>
+                                    <span class="sale">-30%</span>
+                                </div>
+                                <div class="slider-info-wrap">
+                                    <h3 class="slider-info-head">Sackboy: A Big Adventure</h3>
+                                    <div class="slider-info-stars">
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                    </div>
+                                    <div class="slider-info-coast">
+                                        <div class="slider-info-coast-old"></div>
+                                        <div class="slider-info-coast-new">$240.95</div>
+                                    </div>
+                                    <p class="slider-info-text">For norland produce age wishing. To figure on it spring
+                                        season up. Her provision acuteness had excellent two why intention.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card-slide">
+                                <div class="image-container sale-block">
+                                    <img class="search__slider-img-title" src="images/crash.jpg" alt="">
+                                    <nav class="button-wrap">
+                                        <a href="#" class="slider-button-secondary">Read more</a>
+                                        <a href="#" class="slider-button-first">buy now</a>
+                                    </nav>
+                                    <span class="sale">-30%</span>
+                                </div>
+                                <div class="slider-info-wrap">
+                                    <h3 class="slider-info-head">Crash Bandicoot 4 - It's About Time</h3>
+                                    <div class="slider-info-stars">
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                        <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                        </svg>
+                                    </div>
+                                    <div class="slider-info-coast">
+                                        <div class="slider-info-coast-old"></div>
+                                        <div class="slider-info-coast-new">$240.95</div>
+                                    </div>
+                                    <p class="slider-info-text">For norland produce age wishing. To figure on it spring
+                                        season up. Her provision acuteness had excellent two why intention.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <div class="news__center">
+                <div class="news__slider">
+                    <div class="news__prew">
+                        <img class="news__img" src="images/prew.png" alt="">
+                        <h4 class="news_name">VALERIE RISH</h4>
+                        <p class="news__about">
+                            The final scene of Horizon Zero Dawn reveals HADES has not been completely defeated.
+                        </p>
+                        <p class="news__about-1">
+                            A dark entity — thought to be HADES — shoots out of a pile of rubble and is ccharacter
+                            thought to be Aloy’s ally...
+                        </p>
+                    </div>
+
+                    <div class="news__prew">
+                        <img class="news__img" src="images/prew.png" alt="">
+                        <h4 class="news_name">VALERIE RISH</h4>
+                        <p class="news__about">
+                            A dark entity — thought to be HADES — shoots out of a pile of rubble and is ccharacter
+                            thought to be Aloy’s ally...
+                        </p>
+                        <p class="news__about-1">
+                            The final scene of Horizon Zero Dawn reveals HADES has not been completely defeated.
+                        </p>
+                    </div>
+
+                    <div class="news__prew">
+                        <img class="news__img" src="images/prew.png" alt="">
+                        <h4 class="news_name">RISH VALERIE</h4>
+                        <p class="news__about">
+                            A dark entity — thought to be HADES — shoots out of a pile of rubble and thoughtto be Aloy’s
+                            ally...
+                        </p>
+                        <p class="news__about-1"> Placeat est, at
+                            dolores quibusdam doloribus facere..
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about__container">
+                <div class="about__inner">
+                    <div class="about__info-us">
+                        <div class="about__info-tittle">
+                            <h4 class="about__info-tittle-h">A FEW WORDS ABOUT</h4>
+                            <p class="about__info-p-1">One of tPlaystation’s biggest game expected to be released on the
+                                PlayStation 5 in 2021 is
+                                <a href="#" class="about__horizon-fo">Horizon Forbidden West</a>,
+                                <span class="about__asequel"> asequel to Guerilla Games' open-world
+                                    sci-fi game from 2017. Sony Interactive Entertainment has continued to pull back the
+                                    curtain on the long-awaited sequel where Aloy's adventure continues.
+                                </span>
+                            </p>
+                            <p class="about__info-p-2">
+                                SIE and Guerrilla gave gamers their first in-depth look at the upcoming open-world title
+                                during a PS5 reveal event on June 11.
+                            </p>
+                            <a href="" class="about__info-link">Learn more</a>
+                        </div>
+
+                        <div class="about__info">
+                            <div class="about__info-img">
+                                <img class="about__info-img-mob" src="images/about-horizon-mob.jpg" alt="">
+                                <img class="about__info-img-desk" src="images/about-horizon-desk.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="about__inner-p">Leading up to those colossal announcements, Guerrilla had teased the
+                        sequel's
+                        existence with a handful of mysterious job openings and even a few accidental social media
+                        posts.
+                        But now the title has been confirmed as an early release to show off the technical capabilities
+                        of
+                        the PS5 by continuing Aloy's critically acclaimed storyline.
+                    </p>
+                    <div class="about__watch">
+                        <h4 class="about__watch-tittle">
+                            What could the Horizon
+                            Forbidden West story be
+                            about?
+                        </h4>
+                        <p class="about__watch-info">
+                            Gamers play as Aloy, a member of one of many warring tribes that stumbles upon the origins
+                            of
+                            the mechanical beasts the rule the world. They were created by a company named Faro
+                            Automated
+                            Solutions, nearly 1,000 ago as “peacemakers,” but need biomass for fuel. Eventually, they
+                            consumed so much of the Earth’s biosphere that it eradicated most humans. But there was a
+                            Plan
+                            B.Solutions, nearly 1,000 ago as “peacemakers,” but need biomass for fuel. Eventually, they
+                            consumed so much of the Earth’s biosphere that it eradicated most humans. But there was a
+                            Plan
+                            B.
+                        </p>
+                    </div>
+
+                    <div class="about__game">
+                        <div class="about__features">
+                            <div class="about__features-wrapper">
+                                <div class="about__game-tittle">
+                                    Game Features
+                                </div>
+                                <ul class="about__game-list">
+                                    <li class="about__game-item">
+                                        Faro also created an artificial intelligence named GAIA, that could shut down
+                                    </li>
+                                    <li class="about__game-item">
+                                        Make the Earth livable for humans again
+                                    </li>
+                                    <li class="about__game-item">
+                                        Faro also created an artificial intelligence named GAIA, that could shut down
+                                        Make the Earth livable for humans again.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="about__img">
+                                <img class="about__img-mob" src="images/about-img-mob.jpg" alt="">
+                                <img class="about__img-desk" src="images/about-img-desk.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="about__bottom">
+                            Gamers play as Aloy, a member of one of many warring tribes that stumbles upon the origins
+                            of
+                            the mechanical beasts the rule the world. They were created by a company named Faro
+                            Automated
+                            Solutions, nearly 1,000 ago as “peacemakers,” but need biomass for fuel. Eventually, they
+                            consumed so much of the Earth’s biosphere that it eradicated most humans. But there was a
+                            Plan
+                            B.
+                        </div>
+                    </div>
+                </div>
+
+                <aside>
+                    <div class="card">
+                        <div class="card__top">
+                            <div class="card__top-left">Deal of the day</div>
+                            <div class="card__top-right"></div>
+                        </div>
+                        <div class="card__img">
+                            <img class="card__img-item" src="images/sidebar__img-desk.png" alt=""
+                                class="card__img-item">
+                        </div>
+                        <h4 class="card__h">Watch Dogs: Legion</h4>
+                        <div class="card__info">
+                            <div class="card__info-new">
+                                <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                </svg>
+                                <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                </svg>
+                                <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                </svg>
+                                <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                </svg>
+                                <svg height="18px" viewBox="0 -10 511.99143 511" width="18px" fill="#ffb400"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m510.652344 185.882812c-3.371094-10.367187-12.566406-17.707031-23.402344-18.6875l-147.796875-13.417968-58.410156-136.75c-4.3125-10.046875-14.125-16.53125-25.046875-16.53125s-20.738282 6.484375-25.023438 16.53125l-58.410156 136.75-147.820312 13.417968c-10.835938 1-20.011719 8.339844-23.402344 18.6875-3.371094 10.367188-.257813 21.738282 7.9375 28.925782l111.722656 97.964844-32.941406 145.085937c-2.410156 10.667969 1.730468 21.699219 10.582031 28.097656 4.757813 3.457031 10.347656 5.183594 15.957031 5.183594 4.820313 0 9.644532-1.28125 13.953125-3.859375l127.445313-76.203125 127.421875 76.203125c9.347656 5.585938 21.101562 5.074219 29.933593-1.324219 8.851563-6.398437 12.992188-17.429687 10.582032-28.097656l-32.941406-145.085937 111.722656-97.964844c8.191406-7.1875 11.308594-18.535156 7.9375-28.925782zm-252.203125 223.722657" />
+                                </svg>
+                            </div>
+                            <div class="card__info-price">
+                                <div class="card__info-price-old">$100.02</div>
+                                <div class="card__info-price-new">$30.95</div>
+                            </div>
+                        </div>
+                        <p class="card__info-p">For norland produce age wishing. To figure on it spring season up. Her
+                            provision
+                            acuteness had
+                            excellent two why intention.
+                        </p>
+                        <div class="card__time">
+                            <div class="card__time-sal">
+                                <div class="card__time-sale-1 card__time-sale-before">15</div>
+                                <div class="card__time-sale-1 card__time-sale-before">23</div>
+                                <div class="card__time-sale-1 card__time-sale-before">48</div>
+                                <div class="card__time-sale-1_1">30</div>
+                            </div>
+                            <div class="card__time-s">
+                                <div class="card__time-sale-2">days</div>
+                                <div class="card__time-sale-2">hours</div>
+                                <div class="card__time-sale-2">mins</div>
+                                <div class="card__time-sale-2">secs</div>
+                            </div>
+                        </div>
+                        <div class="card__link">
+                            <a href="" class="card__link-item">buy now</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__inner">
+
+                    <div class="footer__contact">
+                        <ul class="footer__contact-list-sub">
+                            <li class="footer__contact-item-sub">
+                                <a href="#" class="footer__contact-item-sub-link">Contact INFO & PAYMENT</a>
+                                <ul class="footer__contact-item-sub-list">
+                                    <li class="footer__contact-item">
+                                        <a class="footer__contact-link-adress" href="#">
+                                            <p>Game Store</p>
+                                            <p>507-Union Trade ipsum Doler Centre
+                                                UK
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="footer__contact-item">
+                                        <a class="footer__contact-link-tel" href="tel:387897897897">+38 789-789-7897</a>
+                                    </li>
+                                    <li class="footer__contact-item">
+                                        <a class="footer__contact-link-mail"
+                                            href="mailto:hi@wapik.com">sales@yourcompany.com
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <nav class="footer__menu">
+                        <div class="footer__menu-tittle footer-tittle">
+                            menu
+                        </div>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Delivery</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Legal Notice</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">Terms and conditions of use</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link">About us</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="" class="footer__menu-link"> Secure payment</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav class="footer__user">
+                        <ul class="footer__user-list-sub">
+                            <li class="footer__user-item-sub">
+                                <a class="footer__user-item-sub-link" href="#">USEFUL LINKS</a>
+                                <ul class="footer__user-item-sub-list">
+                                    <li class="footer__user-item">
+                                        <a href="" class="footer__user-link">Hot Trending</a>
+                                    </li>
+                                    <li class="footer__user-item">
+                                        <a href="" class="footer__user-link">Our Store</a>
+                                    </li>
+                                    <li class="footer__user-item">
+                                        <a href="" class="footer__user-link">New Arrival</a>
+                                    </li>
+                                    <li class="footer__user-item">
+                                        <a href="" class="footer__user-link">Best Seller</a>
+                                    </li>
+                                    <li class="footer__user-item">
+                                        <a href="" class="footer__user-link">Order Tracking</a>
+                                    </li>
+                                    <li class="footer__user-item">
+                                        <a href="" class="footer__user-link">Warranty and Services</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer__our">
+                        <div class="footer__our-tittle">
+                            Our Newsletter
+                        </div>
+                        <div class="footer__our-info">
+                            But now the title has been confirmed as an
+                            early release to show off the technical capabilities of the PS5 by continuing Aloy's
+                            critically acclaimed storyline.
+                        </div>
+                        <form action="" class="footer__our-form">
+                            <input class="footer__our-form-input" required type="email" placeholder="Your email...">
+                            <button class="footer__our-form-btn">subscribe</button>
+                        </form>
+                        <div class="footer__our-social">
+                            <a class="footer__our-social-link-f" href="#">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px"
+                                    height="18px" fill="#fff" viewBox="0 0 96.124 96.123"
+                                    style="enable-background:new 0 0 96.124 96.123;" xml:space="preserve">
+                                    <g>
+                                        <path
+                                            d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
+                                        c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
+                                        c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
+                                        c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a class="footer__our-social-link-t" href="#">
+                                <svg viewBox="0 -47 512.00203 512" width="18px" height="18px" fill="#fff"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m191.011719 419.042969c-22.140625 0-44.929688-1.792969-67.855469-5.386719-40.378906-6.335938-81.253906-27.457031-92.820312-33.78125l-30.335938-16.585938 32.84375-10.800781c35.902344-11.804687 57.742188-19.128906 84.777344-30.597656-27.070313-13.109375-47.933594-36.691406-57.976563-67.175781l-7.640625-23.195313 6.265625.957031c-5.941406-5.988281-10.632812-12.066406-14.269531-17.59375-12.933594-19.644531-19.78125-43.648437-18.324219-64.21875l1.4375-20.246093 12.121094 4.695312c-5.113281-9.65625-8.808594-19.96875-10.980469-30.777343-5.292968-26.359376-.863281-54.363282 12.476563-78.851563l10.558593-19.382813 14.121094 16.960938c44.660156 53.648438 101.226563 85.472656 168.363282 94.789062-2.742188-18.902343-.6875-37.144531 6.113281-53.496093 7.917969-19.039063 22.003906-35.183594 40.722656-46.691407 20.789063-12.777343 46-18.96875 70.988281-17.433593 26.511719 1.628906 50.582032 11.5625 69.699219 28.746093 9.335937-2.425781 16.214844-5.015624 25.511719-8.515624 5.59375-2.105469 11.9375-4.496094 19.875-7.230469l29.25-10.078125-19.074219 54.476562c1.257813-.105468 2.554687-.195312 3.910156-.253906l31.234375-1.414062-18.460937 25.230468c-1.058594 1.445313-1.328125 1.855469-1.703125 2.421875-1.488282 2.242188-3.339844 5.03125-28.679688 38.867188-6.34375 8.472656-9.511718 19.507812-8.921875 31.078125 2.246094 43.96875-3.148437 83.75-16.042969 118.234375-12.195312 32.625-31.09375 60.617187-56.164062 83.199219-31.023438 27.9375-70.582031 47.066406-117.582031 56.847656-23.054688 4.796875-47.8125 7.203125-73.4375 7.203125zm0 0" />
+                                </svg>
+                            </a>
+                            <a class="footer__our-social-link-in" href="#">
+                                <svg id="Capa_1" enable-background="new 0 0 512 512" height="18px" viewBox="0 0 512 512"
+                                    width="18px" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path d="m17.813 161.387h112.571v350.613h-112.571z" />
+                                        <path
+                                            d="m74.099 0c-35.344 0-64.099 28.755-64.099 64.099 0 35.345 28.755 64.1 64.099 64.1 35.345 0 64.1-28.755 64.1-64.1-.001-35.344-28.756-64.099-64.1-64.099z" />
+                                        <path
+                                            d="m501.965 267.242c-1.486-65.345-54.977-116.531-121.775-116.531-36.983 0-71.326 16.389-94.361 44.446v-33.771h-107.03v350.614h112.572v-202.667c0-27.002 21.968-48.97 48.97-48.97 27.001 0 48.969 21.965 48.969 48.972l.12 202.665h112.57z" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <div class="footer__copyright">
+                                <span class="footer__co">Copyright</span>
+                                <span class="footer__year">© 2021.</span>
+                                <span class="footer__all">All Rights Reserved</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/main.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+</body>
+
+</html>
